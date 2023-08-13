@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% block body %}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+ {% if messages %} 
+ {% for category, message in messages %} 
+ {% if category == '1' %}
+
+    <div align=center class="alert-error" role="alert">
+      {{ message }}
+    </div>
+ {% else %} 
+    <div align=center class="alert-success" role="alert">
+    {{ message }}
+    </div>
+
+{% endif %}
+{% endfor %}
+{% endif %} 
+{% endwith %}
+
+
+
+<head>
+    <title>Sign-IN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleslog.css') }}" />
+    
+</head>
+<body>   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <form align="center" id="login" method=POST action="{{ url_for('login') }}">
+                    <br>
+                    <div class="login">    
+                    <form id="login" method="get" action="login.php">
+                        <h3 align="center"><strong>SIGN-IN </strong></h3>
+                        <br><br>
+                    <div align="center" class="form-group">
+                        <label for="username">Username</label>
+                        <input 
+                        type="text" 
+                        class="form-control" 
+                        name="username" 
+                        id="Uname"
+                      placeholder="Enter Username"
+                      />
+                    </div>
+
+                    <br>
+               
+                    <div align="center" class="form-group">
+                        <label for="password">Password</label>
+                        <input 
+                      type="password" 
+                      class="form-control"
+                      id="Pass" 
+                      name="password" 
+                      placeholder="Enter Password"
+                      />
+                    </div>
+
+                    <br><br>  
+                    <input type="checkbox" id="check">    
+                    <span>I Accept Terms and Conditions</span>    
+                    <br><br>    
+                
+
+                    <button type="submit" id="log" class="btn btn-primary btn-block">Log In</button>
+
+                </form>
+
+                <br>
+
+                <div align="center">
+                    <br>
+                    Don't have an account? <a href="{{ url_for('register') }}">Sign up here</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body> 
+{% endblock %}

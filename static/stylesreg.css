@@ -1,0 +1,56 @@
+.register{  
+    width: 400px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 50 0 0 450px;
+    margin-top: 5% !important;  
+    padding: 100px;  
+    background: rgba(78, 138, 170, 0.5);  
+    border-radius: 15px ;  
+      
+}  
+
+
+label{  
+color: #da0505f5;  /*user,pass colour*/
+font-size: 17px;  
+}  
+#username{  
+width: 300px;  
+height: 30px;  
+border: none;  
+border-radius: 5px;  
+padding-left: 9px;  
+}  
+
+#email{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px; 
+}
+
+#password{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+
+#reg{  
+width: 300px;  
+height: 30px;  
+border: none;  
+border-radius: 17px;  
+padding-left: 7px;  
+color: rgb(16, 197, 16);  /*button*/
+
+
+}  
+span{  
+color: rgb(23, 22, 24);   /*terms & cond*/
+font-size: 17px;  
+}  
+

@@ -1,0 +1,33 @@
+<html>
+
+    <head>
+        <title>TRASH</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylestrash.css') }}" />
+    
+    <style>
+
+        body
+        {
+            background-image:url({{url_for('static',filename='img/5.jpg')}});
+        }
+
+    </style> 
+
+    </head>    
+
+    <body align="right">
+        <div align="left">
+            <br>
+        <a href="{{ url_for('list') }}" align="left"><strong>GO_BACK</strong></a>
+        <div align="right">
+        <a href="{{ url_for('logout') }}"><strong>SIGN_OUT></strong></a>
+        </div>
+        </div>
+        <h3 align="center"><u>COMPLETED TASKS</u></h3>
+        <br>
+        {% for task_id in tasks %}
+        <h5 align="center">{{task_id.text}}</h5>
+        {% endfor %}
+    </body>
+
+</html>

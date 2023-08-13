@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+{% block body %} 
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %} 
+{% for category, message in messages %} 
+{% if category == '1' %}
+
+   <div align=center class="alert-error" role="alert">
+     {{ message }}
+    <!-- <button type="button" class="close" data-dismiss="alert">
+       <span aria-hidden="true">&times;</span>
+     </button> =-->
+   </div>
+
+ {% endif %}
+ {% endfor %}
+ {% endif %} 
+ {% endwith %}
+
+
+<head>
+    <title>Sign-UP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesreg.css') }}" />
+</head>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form align="center"  method=POST action="{{ url_for('register') }}">
+              <div class="register"> 
+                  <form id="register" method="get" action="register.php"></form>
+                  <form align="center" method="POST">
+                    <h3 align="center"><strong>Sign Up</strong></h3> 
+                        
+
+                    <div class="form-group">
+                        <label for="username"><strong>User-Name</strong></label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="username"
+                          name="username"
+                          placeholder="Enter user-name"
+                        />
+                      </div>
+                      <br><br>
+                    <div class="form-group">
+                      <label for="email"><strong>Email-Add</strong></label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email address"
+                      />
+                    </div>
+                    <br><br>
+                    <div class="form-group">
+                      <label for="password1"><strong>Password</strong></label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        name="password"
+                        placeholder="Enter password"
+                      />
+                    </div>
+                    
+                   <!-- <div class="form-group">
+                        <label for="DOB">Date-of-Birth_</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="DOB"
+                          name="DOB"
+                          placeholder="dd/mm/yyyy"
+                        />
+                      </div> -->
+                    
+                <br><br><br>
+                <input type="checkbox" id="check">    
+                    <span>I Accept Terms and Conditions and Privacy Policy</span>    
+                <br><br>  
+
+                <button type="submit" id="reg" class="btn btn-primary btn-block">Register</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

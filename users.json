@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "62a4957e063fe58126bac7aa"
+  },
+  "name": "nithis",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJEVURjkwdXF5NWwzdy5tQU5wOG9ndWVIbTRGWUg0Y2dJRXFkdVMxOUJEeHdPbXZON1VCRXF1",
+      "subType": "00"
+    }
+  },
+  "email": "nit@gmail.com"
+},{
+  "_id": {
+    "$oid": "62a590d46682438925410c1a"
+  },
+  "name": "nithish12",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJE1GQVA3bXNHVDM3RnducFVxaTI1ZnVpbktzS1RqWlE3QUJ6Vjdpd0l0eG9YSk1pUjlaampT",
+      "subType": "00"
+    }
+  },
+  "email": "nit@gmail.com"
+},{
+  "_id": {
+    "$oid": "62ac48729d9d7455e8b432ab"
+  },
+  "name": "aaaabbbb",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJDdPWGZWeFdzY0gyZmFmY2JWLzRwNWVtQ2FPemZGOUJ6eEg2TkxYZGllVTd5a1pnSnM5Smxp",
+      "subType": "00"
+    }
+  },
+  "email": "nit@gmail.com"
+},{
+  "_id": {
+    "$oid": "62ac58e3295c3acc8d7bcf6b"
+  },
+  "name": "prakash",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJEhaYTVYWi9iLkNFTXJJd1RHdlkwYy53MmtnMFdqQnpxVXpGR1ZPTDBYYXhMUEtrakJ1eE9p",
+      "subType": "00"
+    }
+  },
+  "email": "nit@gmail.com"
+}]
